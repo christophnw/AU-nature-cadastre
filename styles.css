@@ -1,0 +1,250 @@
+:root {
+  --bg: #f2eee3;
+  --panel: rgba(255, 251, 244, 0.92);
+  --panel-border: rgba(69, 54, 37, 0.12);
+  --text: #1f2c1f;
+  --muted: #566454;
+  --accent: #295c46;
+  --accent-2: #94743b;
+  --water: #2c6e91;
+  --soil: #8e5f3f;
+  --ndwi: #1d8fa3;
+  --carbon: #27523b;
+  --biodiversity: #7b3f69;
+  --vegetation: #4a7c59;
+  --integrity: #8a6a2f;
+  --shadow: 0 24px 60px rgba(31, 44, 31, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(148, 116, 59, 0.18), transparent 32%),
+    linear-gradient(135deg, #efe9da 0%, #f8f5ec 55%, #e8f0e8 100%);
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 390px 1fr;
+  min-height: 100vh;
+}
+
+.panel {
+  padding: 24px;
+  border-right: 1px solid var(--panel-border);
+  background: var(--panel);
+  backdrop-filter: blur(12px);
+  overflow-y: auto;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3,
+label {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h1 {
+  margin: 0 0 12px;
+  line-height: 1;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+
+.lede {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.card {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--panel-border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(41, 92, 70, 0.18);
+  background: white;
+  color: var(--text);
+}
+
+.summary,
+.source,
+.metric {
+  margin-top: 12px;
+  line-height: 1.45;
+}
+
+.summary strong,
+.metric strong {
+  display: block;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.metrics {
+  display: grid;
+  gap: 10px;
+}
+
+.metric {
+  padding: 12px;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.metric.carbon {
+  border-left: 5px solid var(--carbon);
+}
+
+.metric.soil {
+  border-left: 5px solid var(--soil);
+}
+
+.metric.ndwi {
+  border-left: 5px solid var(--ndwi);
+}
+
+.metric.water {
+  border-left: 5px solid var(--water);
+}
+
+.metric.biodiversity {
+  border-left: 5px solid var(--biodiversity);
+}
+
+.metric.vegetation {
+  border-left: 5px solid var(--vegetation);
+}
+
+.metric.integrity {
+  border-left: 5px solid var(--integrity);
+}
+
+.metric-head {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.band-chip {
+  display: inline-flex;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(41, 92, 70, 0.08);
+  border: 1px solid rgba(41, 92, 70, 0.12);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.metric-value {
+  font-size: 0.98rem;
+}
+
+.metric small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.toggles {
+  display: grid;
+  gap: 10px;
+}
+
+.toggle {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 0.95rem;
+}
+
+.toggle small,
+.source small,
+.summary small {
+  display: block;
+  color: var(--muted);
+}
+
+.sources {
+  display: grid;
+  gap: 12px;
+}
+
+.source a {
+  color: var(--accent);
+}
+
+.map-wrap {
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.legend {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 251, 244, 0.94);
+  border: 1px solid var(--panel-border);
+  box-shadow: var(--shadow);
+}
+
+.legend span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  margin-right: 8px;
+}
+
+@media (max-width: 980px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    border-right: 0;
+    border-bottom: 1px solid var(--panel-border);
+  }
+
+  #map {
+    min-height: 65vh;
+  }
+}

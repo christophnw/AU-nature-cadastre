@@ -1,0 +1,32 @@
+{
+  "NSW-PARCEL-001": {
+    "carbon_score": 71,
+    "carbon_detail": "Moderate-to-strong soil organic carbon potential based on public national soil-carbon mapping.",
+    "soil_score": 66,
+    "soil_detail": "Stable upland soils with moderate erosion sensitivity indicated in public soil grid products.",
+    "water_score": 58,
+    "water_detail": "Seasonal drainage influence and limited riparian reach in nearby public hydrology layers.",
+    "biodiversity_score": 74,
+    "biodiversity_detail": "Remnant woodland intersects public biodiversity significance grids at a moderate level."
+  },
+  "NSW-PARCEL-002": {
+    "carbon_score": 63,
+    "carbon_detail": "Carbon opportunity is moderate; terrain and existing woody cover suggest sequestration potential.",
+    "soil_score": 54,
+    "soil_detail": "Steeper terrain lowers soil resilience and raises restoration complexity.",
+    "water_score": 49,
+    "water_detail": "Less direct waterway exposure than other parcels in this prototype catchment.",
+    "biodiversity_score": 88,
+    "biodiversity_detail": "Strong overlap with publicly available species and vegetation significance layers."
+  },
+  "NSW-PARCEL-003": {
+    "carbon_score": 68,
+    "carbon_detail": "Alluvial soils show moderate carbon opportunity in public soil-organic-carbon datasets.",
+    "soil_score": 79,
+    "soil_detail": "Fertile flats with stronger soil function but some compaction risk.",
+    "water_score": 84,
+    "water_detail": "High riparian relevance due to creek adjacency and catchment proximity.",
+    "biodiversity_score": 61,
+    "biodiversity_detail": "Biodiversity value is present but more fragmented than the escarpment parcel."
+  }
+}

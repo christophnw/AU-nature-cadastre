@@ -1,0 +1,41 @@
+{
+  "jurisdiction": "New South Wales",
+  "region_label": "Statewide multi-biome sample",
+  "sample_plots": [
+    {
+      "sample_id": "nsw-central-tablelands",
+      "display_name": "Central Tablelands Woodland",
+      "region": "Central Tablelands",
+      "anchor_point": [149.626, -33.376],
+      "intended_land_type": "Woodland"
+    },
+    {
+      "sample_id": "nsw-north-coast",
+      "display_name": "North Coast Tall Forest",
+      "region": "North Coast",
+      "anchor_point": [153.025, -30.289],
+      "intended_land_type": "Forest"
+    },
+    {
+      "sample_id": "nsw-riverina",
+      "display_name": "Riverina Mixed Production",
+      "region": "Riverina",
+      "anchor_point": [146.01, -34.28],
+      "intended_land_type": "Cleared or agricultural country"
+    },
+    {
+      "sample_id": "nsw-monaro",
+      "display_name": "Monaro Grassland Country",
+      "region": "Snowy Monaro",
+      "anchor_point": [149.22, -36.23],
+      "intended_land_type": "Grassland"
+    },
+    {
+      "sample_id": "nsw-far-west",
+      "display_name": "Far West Shrubland Rangeland",
+      "region": "Far West",
+      "anchor_point": [142.1, -31.1],
+      "intended_land_type": "Shrubland"
+    }
+  ]
+}
