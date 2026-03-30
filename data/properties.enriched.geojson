@@ -1,0 +1,143 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "property_id": "NSW-PARCEL-001",
+        "property_name": "Turon River Holding",
+        "jurisdiction": "New South Wales",
+        "registry_reference": "Illustrative cadastre parcel",
+        "area_ha": 128.4,
+        "summary": "Mixed grazing and remnant woodland parcel used as a prototype stand-in for registry-derived boundaries.",
+        "carbon_score": 71,
+        "carbon_detail": "Moderate-to-strong soil organic carbon potential based on public national soil-carbon mapping.",
+        "soil_score": 66,
+        "soil_detail": "Stable upland soils with moderate erosion sensitivity indicated in public soil grid products.",
+        "water_score": 58,
+        "water_detail": "Seasonal drainage influence and limited riparian reach in nearby public hydrology layers.",
+        "biodiversity_score": 74,
+        "biodiversity_detail": "Remnant woodland intersects public biodiversity significance grids at a moderate level."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.511,
+              -33.351
+            ],
+            [
+              149.571,
+              -33.351
+            ],
+            [
+              149.571,
+              -33.396
+            ],
+            [
+              149.511,
+              -33.396
+            ],
+            [
+              149.511,
+              -33.351
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "property_id": "NSW-PARCEL-002",
+        "property_name": "Capertee Escarpment Block",
+        "jurisdiction": "New South Wales",
+        "registry_reference": "Illustrative cadastre parcel",
+        "area_ha": 214.2,
+        "summary": "Escarpment-edge parcel with native vegetation and strong biodiversity relevance in the prototype.",
+        "carbon_score": 63,
+        "carbon_detail": "Carbon opportunity is moderate; terrain and existing woody cover suggest sequestration potential.",
+        "soil_score": 54,
+        "soil_detail": "Steeper terrain lowers soil resilience and raises restoration complexity.",
+        "water_score": 49,
+        "water_detail": "Less direct waterway exposure than other parcels in this prototype catchment.",
+        "biodiversity_score": 88,
+        "biodiversity_detail": "Strong overlap with publicly available species and vegetation significance layers."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.61,
+              -33.398
+            ],
+            [
+              149.682,
+              -33.398
+            ],
+            [
+              149.682,
+              -33.45
+            ],
+            [
+              149.61,
+              -33.45
+            ],
+            [
+              149.61,
+              -33.398
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "property_id": "NSW-PARCEL-003",
+        "property_name": "Sofala Creek Flats",
+        "jurisdiction": "New South Wales",
+        "registry_reference": "Illustrative cadastre parcel",
+        "area_ha": 96.7,
+        "summary": "Alluvial flats parcel with stronger water and soil sensitivity scores in the prototype.",
+        "carbon_score": 68,
+        "carbon_detail": "Alluvial soils show moderate carbon opportunity in public soil-organic-carbon datasets.",
+        "soil_score": 79,
+        "soil_detail": "Fertile flats with stronger soil function but some compaction risk.",
+        "water_score": 84,
+        "water_detail": "High riparian relevance due to creek adjacency and catchment proximity.",
+        "biodiversity_score": 61,
+        "biodiversity_detail": "Biodiversity value is present but more fragmented than the escarpment parcel."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.474,
+              -33.414
+            ],
+            [
+              149.545,
+              -33.414
+            ],
+            [
+              149.545,
+              -33.463
+            ],
+            [
+              149.474,
+              -33.463
+            ],
+            [
+              149.474,
+              -33.414
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

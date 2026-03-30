@@ -1,0 +1,98 @@
+{
+  "layers": [
+    {
+      "id": "cadastre-nsw",
+      "name": "NSW Cadastre Fabric",
+      "category": "cadastre",
+      "provider": "NSW Spatial Services",
+      "description": "Statewide cadastral display service showing lot, plan and related cadastral extents from the NSW digital cadastre.",
+      "referenceUrl": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Cadastre/MapServer",
+      "serviceType": "esri-dynamic",
+      "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Cadastre/MapServer",
+      "visibleLayers": [5, 6, 7, 8, 9],
+      "attribution": "State of New South Wales"
+    },
+    {
+      "id": "carbon-soc-grid",
+      "name": "ASRIS Soil Organic Carbon",
+      "category": "carbon",
+      "provider": "CSIRO / TERN ASRIS",
+      "description": "Topsoil organic carbon raster used for sample-anchor screening and optional map overlay.",
+      "referenceUrl": "https://asris.csiro.au/arcgis/rest/services/TERN/SOC_ACLEP_AU_TRN_N/MapServer",
+      "serviceType": "esri-dynamic",
+      "url": "https://asris.csiro.au/arcgis/rest/services/TERN/SOC_ACLEP_AU_TRN_N/MapServer",
+      "visibleLayers": [1],
+      "attribution": "CSIRO / TERN"
+    },
+    {
+      "id": "water-hydro",
+      "name": "NSW Water Theme",
+      "category": "water",
+      "provider": "NSW Spatial Services",
+      "description": "Hydro line and hydro area layers used for parcel-envelope screening.",
+      "referenceUrl": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Water_Theme_multiCRS/MapServer",
+      "serviceType": "esri-dynamic",
+      "url": "https://portal.spatial.nsw.gov.au/server/rest/services/NSW_Water_Theme_multiCRS/MapServer",
+      "visibleLayers": [5, 6],
+      "attribution": "State of New South Wales"
+    },
+    {
+      "id": "ndwi-dea",
+      "name": "DEA GeoMAD NDWI",
+      "category": "ndwi",
+      "provider": "Digital Earth Australia",
+      "description": "Annual GeoMAD NDWI style from DEA, sampled at each plot anchor point and available as a WMS overlay.",
+      "referenceUrl": "https://ows.dea.ga.gov.au/",
+      "tileUrl": "https://ows.dea.ga.gov.au/",
+      "layerName": "ga_ls8cls9c_gm_cyear_3",
+      "styles": "ndwi",
+      "attribution": "Geoscience Australia / DEA"
+    },
+    {
+      "id": "biodiversity-snes",
+      "name": "Species Significance Screening",
+      "category": "biodiversity",
+      "provider": "DCCEEW",
+      "description": "Public EPBC screening layer used to count overlapping species-significance records.",
+      "referenceUrl": "https://gis.environment.gov.au/gispub/rest/services/species/species_discovery_minimap/MapServer",
+      "serviceType": "esri-dynamic",
+      "url": "https://gis.environment.gov.au/gispub/rest/services/species/species_discovery_minimap/MapServer",
+      "visibleLayers": [1],
+      "attribution": "Commonwealth of Australia"
+    },
+    {
+      "id": "vegetation-nvis",
+      "name": "NVIS Major Vegetation Groups",
+      "category": "vegetation",
+      "provider": "DCCEEW / NVIS",
+      "description": "Extant native vegetation classes used for a high-level flora or land-type band per parcel.",
+      "referenceUrl": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/NVIS_ext_mvg/MapServer",
+      "serviceType": "esri-dynamic",
+      "url": "https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/NVIS_ext_mvg/MapServer",
+      "visibleLayers": [0],
+      "attribution": "Commonwealth of Australia"
+    },
+    {
+      "id": "soil-clay-grid",
+      "name": "ASRIS Clay Content",
+      "category": "soil",
+      "provider": "CSIRO / TERN ASRIS",
+      "description": "Topsoil clay-content raster used as a simple public soil indicator at each sample anchor point.",
+      "referenceUrl": "https://asris.csiro.au/arcgis/rest/services/TERN/CLY_ACLEP_AU_TRN_N/MapServer",
+      "serviceType": "esri-dynamic",
+      "url": "https://asris.csiro.au/arcgis/rest/services/TERN/CLY_ACLEP_AU_TRN_N/MapServer",
+      "visibleLayers": [1],
+      "attribution": "CSIRO / TERN"
+    },
+    {
+      "id": "eii-local-condition",
+      "name": "EII Local Modulation Reference",
+      "category": "integrity",
+      "provider": "The Landbanking Group / EII documentation",
+      "description": "Prototype local-condition feature aligned to the published EII Local Modulation concept. The official baseline EII workflow requires authenticated Earth Engine access.",
+      "referenceUrl": "https://landler-io.github.io/ecosystem-integrity-index/",
+      "serviceType": "info",
+      "attribution": "The Landbanking Group"
+    }
+  ]
+}

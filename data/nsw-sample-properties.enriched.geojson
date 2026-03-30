@@ -1,0 +1,1144 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "jurisdiction": "New South Wales",
+    "region_label": "Statewide multi-biome sample",
+    "generated_at": "2026-03-30T01:08:40.308Z",
+    "generated_by": "scripts/build-nsw-demo.mjs",
+    "notes": "Parcel geometries are live NSW cadastre samples chosen from statewide anchor points. Carbon, soil, vegetation and NDWI are point samples at each anchor; water and biodiversity are parcel-envelope screening overlays. EII output is a local-condition proxy inspired by the published Local Modulation concept, not the official baseline EII."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 39385,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.625280366953,
+              -33.37569394643972
+            ],
+            [
+              149.62525222834958,
+              -33.3759649548485
+            ],
+            [
+              149.62484737898603,
+              -33.37593537306503
+            ],
+            [
+              149.62435423533609,
+              -33.378032066177155
+            ],
+            [
+              149.62437163345737,
+              -33.378035911613736
+            ],
+            [
+              149.62617709558776,
+              -33.378435175962586
+            ],
+            [
+              149.6285230684101,
+              -33.378953966517024
+            ],
+            [
+              149.62860393250617,
+              -33.37897184980957
+            ],
+            [
+              149.62915209796725,
+              -33.376986597158506
+            ],
+            [
+              149.62908936748812,
+              -33.37696407093389
+            ],
+            [
+              149.62615401337652,
+              -33.37600183196377
+            ],
+            [
+              149.625280366953,
+              -33.37569394643972
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sample_id": "nsw-central-tablelands",
+        "property_id": "10//DP255707",
+        "property_name": "Central Tablelands Woodland",
+        "region": "Central Tablelands",
+        "lotidstring": "10//DP255707",
+        "lotnumber": "10",
+        "planlabel": "DP255707",
+        "registry_reference": "NSW Spatial Services Cadastre",
+        "jurisdiction": "New South Wales",
+        "region_label": "Statewide multi-biome sample",
+        "source_objectid": 39385,
+        "anchor_point": [
+          149.626,
+          -33.376
+        ],
+        "intended_land_type": "Woodland",
+        "area_sqm": 102566.27,
+        "area_ha": 10.26,
+        "summary": "Live NSW cadastral sample 1 in Central Tablelands, anchored to a woodland setting.",
+        "vegetation_band": "Woodland",
+        "vegetation_group": "Eucalypt Woodlands",
+        "vegetation_detail": "Dominant NVIS vegetation at the sample anchor point: Eucalypt Woodlands. Eucalypt woodlands (tree crowns not touching).",
+        "carbon_score": 53,
+        "carbon_band": "Moderate",
+        "carbon_value_display": "2.10% topsoil organic carbon",
+        "carbon_detail": "Sampled from the public ASRIS or TERN soil organic carbon raster at the sample anchor point.",
+        "soil_score": 73,
+        "soil_band": "High",
+        "soil_value_display": "16.12% clay content",
+        "soil_detail": "Sampled from the public ASRIS or TERN clay-content raster at the sample anchor point.",
+        "ndwi_score": 26,
+        "ndwi_band": "Very dry",
+        "ndwi_value_display": "-0.48 annual GeoMAD NDWI (2025)",
+        "ndwi_detail": "Sampled from the official DEA GeoMAD layer using the NDWI style at the sample anchor point.",
+        "water_score": 8,
+        "water_band": "Very low",
+        "water_value_display": "0 hydro areas, 1 hydro lines",
+        "water_detail": "Hydrology preview includes watercourse; perenniality classes observed: non-perennial.",
+        "biodiversity_score": 100,
+        "biodiversity_band": "Very high",
+        "biodiversity_value_display": "76 EPBC screening records",
+        "biodiversity_detail": "Counted from the public species significance service using the parcel envelope.",
+        "eii_local_condition_index": 0.62,
+        "eii_local_condition_band": "Strong",
+        "eii_local_condition_display": "LCI 0.62 | approx +0.01 EII",
+        "eii_local_condition_detail": "Prototype local-condition feature aligned to the EII Local Modulation concept. It combines local carbon, water, biodiversity and vegetation-naturalness proxies from this parcel. The official baseline EII is not included here because the published workflow uses an authenticated Earth Engine pipeline.",
+        "source_generated_at": "2026-03-30T01:08:40.308Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4454464,
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                153.02545197484244,
+                -30.287906062277184
+              ],
+              [
+                153.02587642769132,
+                -30.285667728914166
+              ],
+              [
+                153.02409138539025,
+                -30.285632994340045
+              ],
+              [
+                153.02178339446093,
+                -30.285588066853816
+              ],
+              [
+                153.01950911618144,
+                -30.289405879515947
+              ],
+              [
+                153.01805660212617,
+                -30.293523385184265
+              ],
+              [
+                153.01932649317575,
+                -30.29347411862448
+              ],
+              [
+                153.02018416643065,
+                -30.293393335297132
+              ],
+              [
+                153.02053438924176,
+                -30.29318276255059
+              ],
+              [
+                153.02064355251505,
+                -30.289948701553236
+              ],
+              [
+                153.0210210167372,
+                -30.28959783426823
+              ],
+              [
+                153.02494922932502,
+                -30.290557212617802
+              ],
+              [
+                153.02545197484244,
+                -30.287906062277184
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                153.02632840042887,
+                -30.283284269797683
+              ],
+              [
+                153.02341016820662,
+                -30.282857225575494
+              ],
+              [
+                153.022267852525,
+                -30.28477481800561
+              ],
+              [
+                153.02227755994454,
+                -30.284768462904314
+              ],
+              [
+                153.02240913393845,
+                -30.284825625832802
+              ],
+              [
+                153.02267266595598,
+                -30.284897642813892
+              ],
+              [
+                153.02300211859483,
+                -30.284984145347696
+              ],
+              [
+                153.02315099301822,
+                -30.284956796359573
+              ],
+              [
+                153.02344888334957,
+                -30.284887997694188
+              ],
+              [
+                153.02367992105746,
+                -30.284903424843048
+              ],
+              [
+                153.02397688050965,
+                -30.284933328875702
+              ],
+              [
+                153.024191943926,
+                -30.284892255432386
+              ],
+              [
+                153.02447225647305,
+                -30.28493616122542
+              ],
+              [
+                153.0247688116833,
+                -30.28500836623744
+              ],
+              [
+                153.0249828173335,
+                -30.285080096068153
+              ],
+              [
+                153.02522971255192,
+                -30.285166113616913
+              ],
+              [
+                153.02544371034182,
+                -30.28523784333231
+              ],
+              [
+                153.02567487269096,
+                -30.285239170780038
+              ],
+              [
+                153.0259510440046,
+                -30.28527423711301
+              ],
+              [
+                153.02632840042887,
+                -30.283284269797683
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                153.02280250957,
+                -30.285138110166663
+              ],
+              [
+                153.02253964006002,
+                -30.284995583340983
+              ],
+              [
+                153.02245761039987,
+                -30.284938716254967
+              ],
+              [
+                153.0223089976108,
+                -30.284937846478297
+              ],
+              [
+                153.02217676896967,
+                -30.28495120244575
+              ],
+              [
+                153.02215897558966,
+                -30.28495758468542
+              ],
+              [
+                153.0218728722777,
+                -30.285437874662993
+              ],
+              [
+                153.02409048932068,
+                -30.285480185145317
+              ],
+              [
+                153.0259054264316,
+                -30.28551482183942
+              ],
+              [
+                153.0259349810044,
+                -30.285358973588515
+              ],
+              [
+                153.025772777828,
+                -30.285366638643875
+              ],
+              [
+                153.0256242896802,
+                -30.285351686694693
+              ],
+              [
+                153.02537700032596,
+                -30.28530796919915
+              ],
+              [
+                153.02521253788663,
+                -30.28523652655074
+              ],
+              [
+                153.0250641833632,
+                -30.285207473961428
+              ],
+              [
+                153.0249161084405,
+                -30.285150221078098
+              ],
+              [
+                153.02475124288216,
+                -30.285121079255525
+              ],
+              [
+                153.02458664569556,
+                -30.285063727417555
+              ],
+              [
+                153.02433935634122,
+                -30.285020009793666
+              ],
+              [
+                153.0241575934725,
+                -30.28503307097642
+              ],
+              [
+                153.0240087111888,
+                -30.28506041994327
+              ],
+              [
+                153.02371149234813,
+                -30.2850587075423
+              ],
+              [
+                153.02348071515166,
+                -30.285015088820483
+              ],
+              [
+                153.02333210123973,
+                -30.285014237467873
+              ],
+              [
+                153.0231994694796,
+                -30.28506987693403
+              ],
+              [
+                153.02311664256462,
+                -30.285097602114497
+              ],
+              [
+                153.02293447657686,
+                -30.285152964213868
+              ],
+              [
+                153.02280250957,
+                -30.285138110166663
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sample_id": "nsw-north-coast",
+        "property_id": "1//DP260041",
+        "property_name": "North Coast Tall Forest",
+        "region": "North Coast",
+        "lotidstring": "1//DP260041",
+        "lotnumber": "1",
+        "planlabel": "DP260041",
+        "registry_reference": "NSW Spatial Services Cadastre",
+        "jurisdiction": "New South Wales",
+        "region_label": "Statewide multi-biome sample",
+        "source_objectid": 4454464,
+        "anchor_point": [
+          153.025,
+          -30.289
+        ],
+        "intended_land_type": "Forest",
+        "area_sqm": 393638.03,
+        "area_ha": 39.36,
+        "summary": "Live NSW cadastral sample 2 in North Coast, anchored to a forest setting.",
+        "vegetation_band": "Forest",
+        "vegetation_group": "Eucalypt Tall Open Forests",
+        "vegetation_detail": "Dominant NVIS vegetation at the sample anchor point: Eucalypt Tall Open Forests. Tall eucalypt forests (trees taller than 30 m).",
+        "carbon_score": 100,
+        "carbon_band": "Very high",
+        "carbon_value_display": "5.27% topsoil organic carbon",
+        "carbon_detail": "Sampled from the public ASRIS or TERN soil organic carbon raster at the sample anchor point.",
+        "soil_score": 79,
+        "soil_band": "High",
+        "soil_value_display": "18.08% clay content",
+        "soil_detail": "Sampled from the public ASRIS or TERN clay-content raster at the sample anchor point.",
+        "ndwi_score": 9,
+        "ndwi_band": "Very dry",
+        "ndwi_value_display": "-0.82 annual GeoMAD NDWI (2025)",
+        "ndwi_detail": "Sampled from the official DEA GeoMAD layer using the NDWI style at the sample anchor point.",
+        "water_score": 100,
+        "water_band": "Very high",
+        "water_value_display": "1 hydro areas, 16 hydro lines",
+        "water_detail": "Hydrology preview includes watercourse; perenniality classes observed: non-perennial.",
+        "biodiversity_score": 100,
+        "biodiversity_band": "Very high",
+        "biodiversity_value_display": "116 EPBC screening records",
+        "biodiversity_detail": "Examples from the public species significance service: Long-nosed Potoroo (northern) (Potorous tridactylus tridactylus).",
+        "eii_local_condition_index": 0.96,
+        "eii_local_condition_band": "Very strong",
+        "eii_local_condition_display": "LCI 0.96 | approx +0.05 EII",
+        "eii_local_condition_detail": "Prototype local-condition feature aligned to the EII Local Modulation concept. It combines local carbon, water, biodiversity and vegetation-naturalness proxies from this parcel. The official baseline EII is not included here because the published workflow uses an authenticated Earth Engine pipeline.",
+        "source_generated_at": "2026-03-30T01:08:40.308Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3820432,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              146.01331776714477,
+              -34.279722020198605
+            ],
+            [
+              146.0137832932142,
+              -34.277216337045914
+            ],
+            [
+              146.00772237908146,
+              -34.2764432385109
+            ],
+            [
+              146.00710826604956,
+              -34.279747307676956
+            ],
+            [
+              146.00655161150905,
+              -34.28274224457288
+            ],
+            [
+              146.0105647227514,
+              -34.28325699279424
+            ],
+            [
+              146.01056774333654,
+              -34.2832406782559
+            ],
+            [
+              146.01090642953366,
+              -34.2814146082581
+            ],
+            [
+              146.01093132185017,
+              -34.28128011233249
+            ],
+            [
+              146.01297975356127,
+              -34.28154135848815
+            ],
+            [
+              146.01331776714477,
+              -34.279722020198605
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sample_id": "nsw-riverina",
+        "property_id": "862//DP751709",
+        "property_name": "Riverina Mixed Production",
+        "region": "Riverina",
+        "lotidstring": "862//DP751709",
+        "lotnumber": "862",
+        "planlabel": "DP751709",
+        "registry_reference": "NSW Spatial Services Cadastre",
+        "jurisdiction": "New South Wales",
+        "region_label": "Statewide multi-biome sample",
+        "source_objectid": 3820432,
+        "anchor_point": [
+          146.01,
+          -34.28
+        ],
+        "intended_land_type": "Cleared or agricultural country",
+        "area_sqm": 357884.31,
+        "area_ha": 35.79,
+        "summary": "Live NSW cadastral sample 3 in Riverina, anchored to a cleared or agricultural country setting.",
+        "vegetation_band": "Modified or cleared",
+        "vegetation_group": "Cleared, non-native vegetation, buildings",
+        "vegetation_detail": "Dominant NVIS vegetation at the sample anchor point: Cleared, non-native vegetation, buildings. Cleared vegetation.",
+        "carbon_score": 38,
+        "carbon_band": "Low",
+        "carbon_value_display": "1.53% topsoil organic carbon",
+        "carbon_detail": "Sampled from the public ASRIS or TERN soil organic carbon raster at the sample anchor point.",
+        "soil_score": 89,
+        "soil_band": "Very high",
+        "soil_value_display": "21.32% clay content",
+        "soil_detail": "Sampled from the public ASRIS or TERN clay-content raster at the sample anchor point.",
+        "ndwi_score": 25,
+        "ndwi_band": "Very dry",
+        "ndwi_value_display": "-0.50 annual GeoMAD NDWI (2025)",
+        "ndwi_detail": "Sampled from the official DEA GeoMAD layer using the NDWI style at the sample anchor point.",
+        "water_score": 8,
+        "water_band": "Very low",
+        "water_value_display": "0 hydro areas, 1 hydro lines",
+        "water_detail": "Hydrology preview includes drain; perenniality classes observed: perennial.",
+        "biodiversity_score": 100,
+        "biodiversity_band": "Very high",
+        "biodiversity_value_display": "67 EPBC screening records",
+        "biodiversity_detail": "Counted from the public species significance service using the parcel envelope.",
+        "eii_local_condition_index": 0.42,
+        "eii_local_condition_band": "Mixed",
+        "eii_local_condition_display": "LCI 0.42 | approx -0.01 EII",
+        "eii_local_condition_detail": "Prototype local-condition feature aligned to the EII Local Modulation concept. It combines local carbon, water, biodiversity and vegetation-naturalness proxies from this parcel. The official baseline EII is not included here because the published workflow uses an authenticated Earth Engine pipeline.",
+        "source_generated_at": "2026-03-30T01:08:40.308Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1276412,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              149.21593828386153,
+              -36.225650317253645
+            ],
+            [
+              149.20265282401562,
+              -36.22378116626726
+            ],
+            [
+              149.20265265333572,
+              -36.22378115720871
+            ],
+            [
+              149.20200521168388,
+              -36.2245521126483
+            ],
+            [
+              149.20178894677076,
+              -36.225520329968155
+            ],
+            [
+              149.20150758544068,
+              -36.22677993118399
+            ],
+            [
+              149.20072235008453,
+              -36.22754685337529
+            ],
+            [
+              149.22020322881065,
+              -36.23024765557801
+            ],
+            [
+              149.22020339949057,
+              -36.23024767369364
+            ],
+            [
+              149.2202175535708,
+              -36.23022477917626
+            ],
+            [
+              149.22028121605206,
+              -36.23015036017346
+            ],
+            [
+              149.2203660596848,
+              -36.23009313466567
+            ],
+            [
+              149.22045088647425,
+              -36.23005309182136
+            ],
+            [
+              149.22054277626756,
+              -36.23001305892009
+            ],
+            [
+              149.22062759295088,
+              -36.22997874511783
+            ],
+            [
+              149.22071947376102,
+              -36.22994443130051
+            ],
+            [
+              149.22081136355433,
+              -36.22990439743785
+            ],
+            [
+              149.2209810070271,
+              -36.229824313346924
+            ],
+            [
+              149.22106584167673,
+              -36.22977854307915
+            ],
+            [
+              149.22115774045315,
+              -36.229727054552875
+            ],
+            [
+              149.2212425672425,
+              -36.22968128422821
+            ],
+            [
+              149.22141220060922,
+              -36.22961264725954
+            ],
+            [
+              149.22149702739858,
+              -36.22957261413282
+            ],
+            [
+              149.2215889082088,
+              -36.2295383091952
+            ],
+            [
+              149.22168783405652,
+              -36.22951545975964
+            ],
+            [
+              149.22177263389648,
+              -36.229498329472015
+            ],
+            [
+              149.2218574326135,
+              -36.229475480024725
+            ],
+            [
+              149.22194222347025,
+              -36.22946406888548
+            ],
+            [
+              149.2220340952973,
+              -36.2294412112761
+            ],
+            [
+              149.22212594915797,
+              -36.22942981734183
+            ],
+            [
+              149.22221073889185,
+              -36.229418415253775
+            ],
+            [
+              149.2222955207655,
+              -36.229412741382845
+            ],
+            [
+              149.22238031049935,
+              -36.22940133023443
+            ],
+            [
+              149.22263471787943,
+              -36.2293327645776
+            ],
+            [
+              149.22271953456274,
+              -36.229298450476804
+            ],
+            [
+              149.22281142435605,
+              -36.22925268080702
+            ],
+            [
+              149.22289628707802,
+              -36.229178279900765
+            ],
+            [
+              149.22295996640275,
+              -36.22909239526665
+            ],
+            [
+              149.2229953656394,
+              -36.229023678071194
+            ],
+            [
+              149.22301663662248,
+              -36.228954959909565
+            ],
+            [
+              149.22305918869455,
+              -36.22880605057563
+            ],
+            [
+              149.22307347752206,
+              -36.22866858754131
+            ],
+            [
+              149.22308768550118,
+              -36.22859986091549
+            ],
+            [
+              149.22308775736636,
+              -36.22853112517119
+            ],
+            [
+              149.2230949012187,
+              -36.22846238936652
+            ],
+            [
+              149.22309514376377,
+              -36.22824472588839
+            ],
+            [
+              149.22310228761606,
+              -36.22817599889001
+            ],
+            [
+              149.22310942360812,
+              -36.22810726277321
+            ],
+            [
+              149.223127557225,
+              -36.22803237798237
+            ],
+            [
+              149.22314491155345,
+              -36.2279698093803
+            ],
+            [
+              149.2231732376801,
+              -36.22790109210421
+            ],
+            [
+              149.22320158177317,
+              -36.22782664552743
+            ],
+            [
+              149.22322355231918,
+              -36.22775138455687
+            ],
+            [
+              149.22324412486208,
+              -36.227689200699366
+            ],
+            [
+              149.2232583328412,
+              -36.22761474667436
+            ],
+            [
+              149.2232725408203,
+              -36.227546019122386
+            ],
+            [
+              149.22329381180336,
+              -36.22747157401922
+            ],
+            [
+              149.2233009657617,
+              -36.22739710982307
+            ],
+            [
+              149.2233151737408,
+              -36.227328382985654
+            ],
+            [
+              149.22332939070307,
+              -36.22724820024023
+            ],
+            [
+              149.2233435986822,
+              -36.22717947327193
+            ],
+            [
+              149.22335780553843,
+              -36.2271050187617
+            ],
+            [
+              149.22337202250068,
+              -36.227024826729085
+            ],
+            [
+              149.22337916747585,
+              -36.226956099564475
+            ],
+            [
+              149.22340753851836,
+              -36.22685874209221
+            ],
+            [
+              149.2234358826113,
+              -36.2267785679235
+            ],
+            [
+              149.22345715359432,
+              -36.22670984144833
+            ],
+            [
+              149.22345795197205,
+              -36.2267075732707
+            ],
+            [
+              149.21593828386153,
+              -36.225650317253645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sample_id": "nsw-monaro",
+        "property_id": "79//DP750530",
+        "property_name": "Monaro Grassland Country",
+        "region": "Snowy Monaro",
+        "lotidstring": "79//DP750530",
+        "lotnumber": "79",
+        "planlabel": "DP750530",
+        "registry_reference": "NSW Spatial Services Cadastre",
+        "jurisdiction": "New South Wales",
+        "region_label": "Statewide multi-biome sample",
+        "source_objectid": 1276412,
+        "anchor_point": [
+          149.22,
+          -36.23
+        ],
+        "intended_land_type": "Grassland",
+        "area_sqm": 834820.52,
+        "area_ha": 83.48,
+        "summary": "Live NSW cadastral sample 4 in Snowy Monaro, anchored to a grassland setting.",
+        "vegetation_band": "Grassland or herbland",
+        "vegetation_group": "Tussock Grasslands",
+        "vegetation_detail": "Dominant NVIS vegetation at the sample anchor point: Tussock Grasslands. Grasslands.",
+        "carbon_score": 61,
+        "carbon_band": "High",
+        "carbon_value_display": "2.45% topsoil organic carbon",
+        "carbon_detail": "Sampled from the public ASRIS or TERN soil organic carbon raster at the sample anchor point.",
+        "soil_score": 81,
+        "soil_band": "Very high",
+        "soil_value_display": "18.73% clay content",
+        "soil_detail": "Sampled from the public ASRIS or TERN clay-content raster at the sample anchor point.",
+        "ndwi_score": 29,
+        "ndwi_band": "Very dry",
+        "ndwi_value_display": "-0.41 annual GeoMAD NDWI (2025)",
+        "ndwi_detail": "Sampled from the official DEA GeoMAD layer using the NDWI style at the sample anchor point.",
+        "water_score": 100,
+        "water_band": "Very high",
+        "water_value_display": "1 hydro areas, 15 hydro lines",
+        "water_detail": "Hydrology preview includes watercourse; perenniality classes observed: non-perennial, perennial.",
+        "biodiversity_score": 100,
+        "biodiversity_band": "Very high",
+        "biodiversity_value_display": "72 EPBC screening records",
+        "biodiversity_detail": "Counted from the public species significance service using the parcel envelope.",
+        "eii_local_condition_index": 0.87,
+        "eii_local_condition_band": "Very strong",
+        "eii_local_condition_display": "LCI 0.87 | approx +0.04 EII",
+        "eii_local_condition_detail": "Prototype local-condition feature aligned to the EII Local Modulation concept. It combines local carbon, water, biodiversity and vegetation-naturalness proxies from this parcel. The official baseline EII is not included here because the published workflow uses an authenticated Earth Engine pipeline.",
+        "source_generated_at": "2026-03-30T01:08:40.308Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4467253,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              142.13793960290087,
+              -31.07417667241824
+            ],
+            [
+              142.06107671313174,
+              -31.07440552355789
+            ],
+            [
+              142.04469169612346,
+              -31.074448335166526
+            ],
+            [
+              142.04694922980607,
+              -31.13842600688097
+            ],
+            [
+              142.05065269738455,
+              -31.138668635415563
+            ],
+            [
+              142.05042097920276,
+              -31.1421516700285
+            ],
+            [
+              142.04707069101568,
+              -31.141864472957298
+            ],
+            [
+              142.04831525968027,
+              -31.17707564902079
+            ],
+            [
+              142.0012646200063,
+              -31.177210028135597
+            ],
+            [
+              141.9634069189877,
+              -31.17731806141198
+            ],
+            [
+              141.96358730069676,
+              -31.223065580774804
+            ],
+            [
+              141.96360366014096,
+              -31.22718391072267
+            ],
+            [
+              141.96403774966706,
+              -31.336512651064005
+            ],
+            [
+              141.9752036682869,
+              -31.336487937105183
+            ],
+            [
+              142.0012665929313,
+              -31.336412666333988
+            ],
+            [
+              142.0050606061988,
+              -31.33640170386777
+            ],
+            [
+              142.00561529679754,
+              -31.336400099300224
+            ],
+            [
+              142.09210393352583,
+              -31.324860920641925
+            ],
+            [
+              142.09760126373854,
+              -31.318836444637206
+            ],
+            [
+              142.10506701271993,
+              -31.324225553655385
+            ],
+            [
+              142.14242297433427,
+              -31.327116328937272
+            ],
+            [
+              142.14051116290315,
+              -31.2458368317171
+            ],
+            [
+              142.13888766127099,
+              -31.176625119151755
+            ],
+            [
+              142.1388381438867,
+              -31.174514164518218
+            ],
+            [
+              142.13793960290087,
+              -31.07417667241824
+            ]
+          ],
+          [
+            [
+              141.96905701445183,
+              -31.21262727678647
+            ],
+            [
+              141.96968959347728,
+              -31.208282274293904
+            ],
+            [
+              141.9743947320048,
+              -31.208739473239458
+            ],
+            [
+              141.97378996818927,
+              -31.213129950365335
+            ],
+            [
+              141.96905701445183,
+              -31.21262727678647
+            ]
+          ],
+          [
+            [
+              142.05436387475388,
+              -31.13878279162506
+            ],
+            [
+              142.05474144677385,
+              -31.135187312499802
+            ],
+            [
+              142.05899568941925,
+              -31.135517778107697
+            ],
+            [
+              142.0586182779732,
+              -31.139113265849335
+            ],
+            [
+              142.05436387475388,
+              -31.13878279162506
+            ]
+          ],
+          [
+            [
+              142.0506617333134,
+              -31.173554606922963
+            ],
+            [
+              142.05105628349227,
+              -31.17009238589795
+            ],
+            [
+              142.05523147214683,
+              -31.17044406979279
+            ],
+            [
+              142.0548370836648,
+              -31.17390629909849
+            ],
+            [
+              142.0506617333134,
+              -31.173554606922963
+            ]
+          ],
+          [
+            [
+              142.1014122192323,
+              -31.237615912349185
+            ],
+            [
+              142.10239147160064,
+              -31.23443335882981
+            ],
+            [
+              142.10613777871208,
+              -31.235284345526345
+            ],
+            [
+              142.1051586431247,
+              -31.238466926063488
+            ],
+            [
+              142.1014122192323,
+              -31.237615912349185
+            ]
+          ],
+          [
+            [
+              142.08542330311957,
+              -31.24424900648815
+            ],
+            [
+              142.08639796509678,
+              -31.241058027209263
+            ],
+            [
+              142.09009188695242,
+              -31.241890860979442
+            ],
+            [
+              142.08911734175624,
+              -31.245081886042616
+            ],
+            [
+              142.08542330311957,
+              -31.24424900648815
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "sample_id": "nsw-far-west",
+        "property_id": "2232//DP764001",
+        "property_name": "Far West Shrubland Rangeland",
+        "region": "Far West",
+        "lotidstring": "2232//DP764001",
+        "lotnumber": "2232",
+        "planlabel": "DP764001",
+        "registry_reference": "NSW Spatial Services Cadastre",
+        "jurisdiction": "New South Wales",
+        "region_label": "Statewide multi-biome sample",
+        "source_objectid": 4467253,
+        "anchor_point": [
+          142.1,
+          -31.1
+        ],
+        "intended_land_type": "Shrubland",
+        "area_sqm": 386439065.66,
+        "area_ha": 38643.91,
+        "summary": "Live NSW cadastral sample 5 in Far West, anchored to a shrubland setting.",
+        "vegetation_band": "Shrubland or heath",
+        "vegetation_group": "Acacia Shrublands",
+        "vegetation_detail": "Dominant NVIS vegetation at the sample anchor point: Acacia Shrublands. Acacia shrublands.",
+        "carbon_score": 14,
+        "carbon_band": "Very low",
+        "carbon_value_display": "0.55% topsoil organic carbon",
+        "carbon_detail": "Sampled from the public ASRIS or TERN soil organic carbon raster at the sample anchor point.",
+        "soil_score": 83,
+        "soil_band": "Very high",
+        "soil_value_display": "19.20% clay content",
+        "soil_detail": "Sampled from the public ASRIS or TERN clay-content raster at the sample anchor point.",
+        "ndwi_score": 28,
+        "ndwi_band": "Very dry",
+        "ndwi_value_display": "-0.44 annual GeoMAD NDWI (2025)",
+        "ndwi_detail": "Sampled from the official DEA GeoMAD layer using the NDWI style at the sample anchor point.",
+        "water_score": 100,
+        "water_band": "Very high",
+        "water_value_display": "24 hydro areas, 87 hydro lines",
+        "water_detail": "Hydrology preview includes watercourse; perenniality classes observed: non-perennial.",
+        "biodiversity_score": 100,
+        "biodiversity_band": "Very high",
+        "biodiversity_value_display": "44 EPBC screening records",
+        "biodiversity_detail": "Counted from the public species significance service using the parcel envelope.",
+        "eii_local_condition_index": 0.75,
+        "eii_local_condition_band": "Strong",
+        "eii_local_condition_display": "LCI 0.75 | approx +0.03 EII",
+        "eii_local_condition_detail": "Prototype local-condition feature aligned to the EII Local Modulation concept. It combines local carbon, water, biodiversity and vegetation-naturalness proxies from this parcel. The official baseline EII is not included here because the published workflow uses an authenticated Earth Engine pipeline.",
+        "source_generated_at": "2026-03-30T01:08:40.308Z"
+      }
+    }
+  ]
+}

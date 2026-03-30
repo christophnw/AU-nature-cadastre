@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature Cadastre Prototype</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="panel">
+        <div class="hero">
+          <p class="eyebrow">Nature Cadastre</p>
+          <h1>Australian parcel and natural capital prototype</h1>
+          <p class="lede">
+            This NSW demo ingests live cadastre sample plots and enriches them with public carbon, soil, NDWI, water, biodiversity, vegetation and integrity-screening context.
+          </p>
+        </div>
+
+        <section class="card">
+          <label for="property-select">Property</label>
+          <select id="property-select"></select>
+          <div id="property-summary" class="summary"></div>
+        </section>
+
+        <section class="card">
+          <h2>Layer visibility</h2>
+          <div id="layer-toggles" class="toggles"></div>
+        </section>
+
+        <section class="card">
+          <h2>Joined indicators</h2>
+          <div id="metrics" class="metrics"></div>
+        </section>
+
+        <section class="card">
+          <h2>Public data sources</h2>
+          <div id="sources" class="sources"></div>
+        </section>
+      </aside>
+
+      <main class="map-wrap">
+        <div id="map"></div>
+      </main>
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script
+      src="https://unpkg.com/esri-leaflet@3.0.14/dist/esri-leaflet.js"
+      crossorigin=""
+    ></script>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
