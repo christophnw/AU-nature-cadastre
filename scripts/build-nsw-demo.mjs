@@ -195,10 +195,14 @@ async function enrichFeature(feature) {
     )
   ).slice(0, 4);
 
+  const areaHa = feature.properties.area_ha || 1;
   const carbonScore = clamp(Math.round((carbonValue || 0) * 25), 0, 100);
   const soilScore = clamp(Math.round(100 - Math.abs((soilValue || 0) - 25) * 3), 0, 100);
   const ndwiScore = clamp(Math.round(((ndwiValue || -1) + 1) * 50), 0, 100);
-  const waterScore = clamp(waterAreaCount * 35 + waterLineCount * 8, 0, 100);
+  // Water score is density-normalised by parcel area (floor at 100 ha to avoid inflating tiny parcels).
+  // Raw feature counts are not comparable across parcels of very different sizes.
+  const waterDensityDenominator = Math.max(areaHa / 100, 1);
+  const waterScore = clamp(Math.round((waterAreaCount * 35 + waterLineCount * 8) / waterDensityDenominator), 0, 100);
   const biodiversityScore = clamp(biodiversityCount * 4, 0, 100);
 
   const localConditionIndex = round(
@@ -245,14 +249,14 @@ async function enrichFeature(feature) {
           : "No NDWI value returned",
       ndwi_detail:
         ndwiValue !== null
-          ? "Sampled from the official DEA GeoMAD layer using the NDWI style at the sample anchor point."
+          ? "Surface moisture index sampled from the DEA GeoMAD annual composite at the anchor point. Measures spectral wetness of the land surface — not the presence of watercourses. Rural NSW land typically reads −0.3 to −0.7; irrigated crops and wetlands read closer to 0."
           : "The DEA NDWI service did not return a value at the sample anchor point.",
       water_score: waterScore,
       water_band: screeningBandFromScore(waterScore),
-      water_value_display: `${waterAreaCount} hydro areas, ${waterLineCount} hydro lines`,
+      water_value_display: `${waterAreaCount} hydro areas, ${waterLineCount} hydro lines (${round((waterAreaCount * 35 + waterLineCount * 8) / areaHa * 100, 1)} weighted features per 100 ha)`,
       water_detail:
-        hydroSummary ||
-        "Screened from the NSW Water Theme using the parcel envelope as the query geometry.",
+        (hydroSummary ? hydroSummary + " " : "") +
+        `Score is density-normalised by parcel area (${round(areaHa, 0)} ha) so that larger parcels are not rewarded simply for containing more mapped features.`,
       biodiversity_score: biodiversityScore,
       biodiversity_band: screeningBandFromScore(biodiversityScore),
       biodiversity_value_display: `${biodiversityCount} EPBC screening records`,
@@ -570,19 +574,22 @@ function localConditionBandFromIndex(value) {
 }
 
 function ndwiBandFromValue(value) {
+  // Thresholds calibrated for annual-average GeoMAD NDWI over rural NSW land.
+  // Open water reads ~0.0 to +0.8; dry native vegetation typically -0.3 to -0.7.
+  // The old thresholds (centred on 0) put all non-irrigated rural land in "Very dry".
   if (value === null) {
     return "No data";
   }
-  if (value >= 0.3) {
+  if (value >= 0.0) {
     return "Very wet";
   }
-  if (value >= 0.1) {
+  if (value >= -0.2) {
     return "Wet";
   }
-  if (value >= -0.1) {
-    return "Moist";
+  if (value >= -0.4) {
+    return "Moderate";
   }
-  if (value >= -0.3) {
+  if (value >= -0.6) {
     return "Dry";
   }
   return "Very dry";
