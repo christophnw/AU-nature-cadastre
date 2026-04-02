@@ -51,6 +51,7 @@ The script will:
 - count public water and biodiversity records against each parcel envelope
 - derive screening bands for the natural capital indicators
 - derive an EII-style local condition feature from local proxy KPIs
+- carry tenure, land use and planning fields from the sample config into the enriched output
 - write the enriched GeoJSON consumed by the UI
 
 ## How the matching works
@@ -93,6 +94,22 @@ This NSW demo uses a pragmatic screening workflow:
 
 That makes it useful for product prototyping, but not yet production-grade spatial analytics. A stronger next version would use exact polygon intersections, zonal statistics and authenticated access to the official EII baseline workflow.
 
+## Land and tenure fields
+
+Each sample parcel now includes five indicative land and tenure fields, visible in the property panel:
+
+| Field | Description |
+|---|---|
+| `tenure_type` | Freehold or Crown Land lease type (e.g. Western Lands Lease) |
+| `land_use` | Current use description (e.g. dryland cropping, pastoral grazing) |
+| `land_use_type` | Broader classification of the land use pattern |
+| `planning_zone` | Indicative NSW LEP planning zone (e.g. RU1 Primary Production) |
+| `permitted_uses` | Summary of uses permitted under that zone and applicable legislation |
+
+These values are set in `data/nsw-sample-config.json` per sample plot. They are indicative for prototyping purposes and should be verified against the relevant council LEP and land title records before any commercial use.
+
+The Far West parcel is the only non-freehold example — it uses a Western Lands Lease under the Western Lands Act 1901, which applies to pastoral leasehold land in NSW's Western Division.
+
 ## Important limitation
 
 This prototype is a screening UI, not a legal cadastral or valuation product. Any production workflow should verify:
@@ -100,3 +117,4 @@ This prototype is a screening UI, not a legal cadastral or valuation product. An
 - state-by-state licensing and permitted use of parcel boundaries
 - CORS and uptime of public map services
 - spatial accuracy, projection handling and parcel refresh cadence
+- tenure type, planning zone and permitted use against the relevant title records, council LEP and state government registers
