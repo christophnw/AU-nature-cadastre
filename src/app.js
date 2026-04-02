@@ -181,15 +181,35 @@ function renderSummary(propertiesForParcel) {
     ? new Date(properties.metadata.generated_at).toLocaleString()
     : "Unknown";
 
+  const p = propertiesForParcel;
+  const tenureSection = p.tenure_type ? `
+    <div class="tenure-section">
+      <strong>Land &amp; Tenure</strong>
+      <div class="tenure-table">
+        <span class="tenure-label">Tenure</span>
+        <span>${p.tenure_type}</span>
+        <span class="tenure-label">Land use</span>
+        <span>${p.land_use}</span>
+        <span class="tenure-label">Use type</span>
+        <span>${p.land_use_type}</span>
+        <span class="tenure-label">Planning zone</span>
+        <span>${p.planning_zone}</span>
+        <span class="tenure-label">Permitted uses</span>
+        <span>${p.permitted_uses}</span>
+      </div>
+    </div>
+  ` : "";
+
   propertySummary.innerHTML = `
-    <strong>${propertiesForParcel.property_name}</strong>
-    Property ID: ${propertiesForParcel.property_id}<br />
-    Jurisdiction: ${propertiesForParcel.jurisdiction}<br />
-    Region: ${propertiesForParcel.region}<br />
-    Area: ${propertiesForParcel.area_ha} ha<br />
-    Vegetation band: ${propertiesForParcel.vegetation_band}<br />
-    Registry reference: ${propertiesForParcel.registry_reference}<br />
-    <small>${propertiesForParcel.summary}</small>
+    <strong>${p.property_name}</strong>
+    Property ID: ${p.property_id}<br />
+    Jurisdiction: ${p.jurisdiction}<br />
+    Region: ${p.region}<br />
+    Area: ${p.area_ha} ha<br />
+    Vegetation band: ${p.vegetation_band}<br />
+    Registry reference: ${p.registry_reference}<br />
+    ${tenureSection}
+    <small>${p.summary}</small>
     <small>Live sample generated: ${generatedAt}</small>
   `;
 }

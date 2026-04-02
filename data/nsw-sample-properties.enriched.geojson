@@ -113,7 +113,12 @@
         "eii_local_condition_band": "Strong",
         "eii_local_condition_display": "LCI 0.62 | approx +0.01 EII",
         "eii_local_condition_detail": "Prototype local-condition feature aligned to the EII Local Modulation concept. It combines local carbon, water, biodiversity and vegetation-naturalness proxies from this parcel. The official baseline EII is not included here because the published workflow uses an authenticated Earth Engine pipeline.",
-        "source_generated_at": "2026-03-30T01:08:40.308Z"
+        "source_generated_at": "2026-03-30T01:08:40.308Z",
+        "tenure_type": "Freehold",
+        "land_use": "Grazing on native vegetation",
+        "land_use_type": "Woodland pasture — mixed grazing and native scrub",
+        "planning_zone": "RU1 Primary Production (indicative)",
+        "permitted_uses": "Agriculture, farm buildings, dwelling (with consent); land clearing requires biodiversity assessment under Biodiversity Conservation Act 2016"
       }
     },
     {
@@ -427,7 +432,12 @@
         "eii_local_condition_band": "Very strong",
         "eii_local_condition_display": "LCI 0.96 | approx +0.05 EII",
         "eii_local_condition_detail": "Prototype local-condition feature aligned to the EII Local Modulation concept. It combines local carbon, water, biodiversity and vegetation-naturalness proxies from this parcel. The official baseline EII is not included here because the published workflow uses an authenticated Earth Engine pipeline.",
-        "source_generated_at": "2026-03-30T01:08:40.308Z"
+        "source_generated_at": "2026-03-30T01:08:40.308Z",
+        "tenure_type": "Freehold",
+        "land_use": "Production forestry — remnant tall forest",
+        "land_use_type": "Timber production or rural residential",
+        "planning_zone": "RU2 Rural Landscape (indicative)",
+        "permitted_uses": "Forestry, agriculture, eco-tourism (with consent); environmental protection overlays likely apply under Clarence Valley LEP"
       }
     },
     {
@@ -531,7 +541,12 @@
         "eii_local_condition_band": "Mixed",
         "eii_local_condition_display": "LCI 0.42 | approx -0.01 EII",
         "eii_local_condition_detail": "Prototype local-condition feature aligned to the EII Local Modulation concept. It combines local carbon, water, biodiversity and vegetation-naturalness proxies from this parcel. The official baseline EII is not included here because the published workflow uses an authenticated Earth Engine pipeline.",
-        "source_generated_at": "2026-03-30T01:08:40.308Z"
+        "source_generated_at": "2026-03-30T01:08:40.308Z",
+        "tenure_type": "Freehold",
+        "land_use": "Dryland cropping and modified pasture",
+        "land_use_type": "Broadacre grain and livestock farming",
+        "planning_zone": "RU1 Primary Production (indicative)",
+        "permitted_uses": "Cropping, grazing, irrigation (if licenced), farm buildings; intensive agriculture and rural industries permitted with consent"
       }
     },
     {
@@ -867,7 +882,12 @@
         "eii_local_condition_band": "Very strong",
         "eii_local_condition_display": "LCI 0.87 | approx +0.04 EII",
         "eii_local_condition_detail": "Prototype local-condition feature aligned to the EII Local Modulation concept. It combines local carbon, water, biodiversity and vegetation-naturalness proxies from this parcel. The official baseline EII is not included here because the published workflow uses an authenticated Earth Engine pipeline.",
-        "source_generated_at": "2026-03-30T01:08:40.308Z"
+        "source_generated_at": "2026-03-30T01:08:40.308Z",
+        "tenure_type": "Freehold",
+        "land_use": "Grazing on native grassland",
+        "land_use_type": "High-country pastoral grazing",
+        "planning_zone": "RU1 Primary Production (indicative)",
+        "permitted_uses": "Grazing, farm buildings, dwelling (with consent); native grassland management incentives available under Snowy Monaro Regional Council LEP"
       }
     },
     {
@@ -1137,7 +1157,12 @@
         "eii_local_condition_band": "Strong",
         "eii_local_condition_display": "LCI 0.75 | approx +0.03 EII",
         "eii_local_condition_detail": "Prototype local-condition feature aligned to the EII Local Modulation concept. It combines local carbon, water, biodiversity and vegetation-naturalness proxies from this parcel. The official baseline EII is not included here because the published workflow uses an authenticated Earth Engine pipeline.",
-        "source_generated_at": "2026-03-30T01:08:40.308Z"
+        "source_generated_at": "2026-03-30T01:08:40.308Z",
+        "tenure_type": "Crown Land — Western Lands Lease (pastoral)",
+        "land_use": "Grazing on native vegetation — arid rangelands",
+        "land_use_type": "Pastoral rangeland",
+        "planning_zone": "Unzoned Crown land (Western Division)",
+        "permitted_uses": "Pastoral grazing under lease conditions; development and vegetation clearing subject to Ministerial consent; Western Lands Act 1901 applies"
       }
     }
   ]

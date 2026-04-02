@@ -82,6 +82,11 @@ async function fetchCadastreSamples(sampleConfig) {
           source_objectid: feature.properties.objectid,
           anchor_point: plot.anchor_point,
           intended_land_type: plot.intended_land_type,
+          tenure_type: plot.tenure_type || null,
+          land_use: plot.land_use || null,
+          land_use_type: plot.land_use_type || null,
+          planning_zone: plot.planning_zone || null,
+          permitted_uses: plot.permitted_uses || null,
           area_sqm: round(areaSqm, 2),
           area_ha: round(areaSqm / 10000, 2),
           summary: `Live NSW cadastral sample ${index + 1} in ${plot.region}, anchored to a ${plot.intended_land_type.toLowerCase()} setting.`

@@ -13,6 +13,7 @@
   --biodiversity: #7b3f69;
   --vegetation: #4a7c59;
   --integrity: #8a6a2f;
+  --tenure: #6b4a1a;
   --shadow: 0 24px 60px rgba(31, 44, 31, 0.16);
 }
 
@@ -179,6 +180,38 @@ select {
   display: block;
   margin-top: 8px;
   color: var(--muted);
+}
+
+.tenure-section {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--panel-border);
+}
+
+.tenure-section strong {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--tenure);
+  margin-bottom: 6px;
+}
+
+.tenure-table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.tenure-label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  padding-top: 1px;
 }
 
 .toggles {
